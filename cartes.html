@@ -1,34 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>Cartes géographique</title>
- <meta charset="UTF-8">
- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
- <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
- <script src="/ecole.geojson"></script>
+  <meta charset="UTF-8">
+  <title>Hébergement Cloud QGIS</title>
   <style>
- #map {width: 70%; height:600px; margin: auto; }
- 
-     </style>
-     
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      font-size: 16px;
+      margin-top: 10px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      border-bottom: 2px solid #2196F3;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .cartes {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+    }
+
+    .carte-item {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      width: 100px;
+      flex: 0 0 auto;
+      text-align: center;
+    }
+
+    .carte-item img {
+      width: 80px;
+      height: 60px;
+      background-color: #ddd;
+      object-fit: cover;
+    }
+
+    .carte-item p {
+      font-size: 12px;
+      margin-top: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .cartes::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .cartes::-webkit-scrollbar-thumb {
+      background-color: #bbb;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    <h1>SIG LIBRE : CARTOGRAPHIE INTERACTIVES </h1>
- <div id="map"></div>
- <script>
- // Initialiser la carte
- var map = L.map('map', {
- center: [5, 10],
- zoom: 5 });
- 
- // AJOUTER DES DONNEES
-  
-<a href=https://umap.openstreetmap.fr/fr/map/carte-danalyse-de-logements-et-de-territoire_1158455#9/47.4550/-0.4340>Cartes géographiques</a>
 
-     // Ajouter l'echellecartographique
- L.control.scale().addTo(map);
- </script>
+  <header>
+    <h1>Hébergement Cloud QGIS</h1>
+    <p>
+      QGIS Cloud est une plate-forme Web-GIS pour publier et partager vos cartes professionnelles en ligne.
+    </p>
+  </header>
+
+  <section>
+    <h2>Cartes récentes</h2>
+    <div class="cartes">
+      <div class="carte-item">
+        <img src="https://via.placeholder.com/80x60?text=Carte1" alt="Carte 1">
+        <p>Carte 1</p>
+      </div>
+      <div class="carte-item">
+        <img src="https://via.placeholder.com/80x60?text=Carte2" alt="Carte 2">
+        <p>Carte 2</p>
+      </div>
+      <div class="carte-item">
+        <img src="https://via.placeholder.com/80x60?text=Carte3" alt="Carte 3">
+        <p>Carte 3</p>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
