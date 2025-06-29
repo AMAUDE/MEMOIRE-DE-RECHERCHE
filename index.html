@@ -1,42 +1,193 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mutation urbaine à Bouaflé - Accueil</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <style>
-        body { padding-top: 20px; }
+  <meta charset="UTF-8">
+  <title>Géoportail de la ville de Bouaflé</title>
+  <style>
+    :root {
+      --main-color: #2563eb;
+      --accent-color: #0ea5e9;
+      --bg-color: #f8fafc;
+      --text-color: #1e293b;
+    }
         .nav-link { margin-right: 10px; }
-        .footer { margin-top: 50px; text-align: center; }
-        .bloc { font-family: 'Times New Roman', Times, serif; text-align: justify; padding: 20px; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 30px;background: url('TRANSUA.jpg');}
-    </style>
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      color: var(--main-color);
+      font-size: 24px;
+      margin-bottom: 15px;
+      border-left: 4px solid var(--accent-color);
+      padding-left: 10px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h3 {
+      color: var(--accent-color);
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 14px;
+    }
+
+    .launch {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .launch a {
+      display: inline-block;
+      background-color: var(--main-color);
+      color: white;
+      padding: 15px 30px;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .launch a:hover {
+      background-color: #1e40af;
+    }
+
+    footer {
+      background: #e2e8f0;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
+
+
+  <header>
+    <h1>Géoportail de Bouaflé</h1>
+	<div class="container">
     <nav class="nav justify-content-center">
         <a class="nav-link" href="presentation.html">PRESENTATION</a>
         <a class="nav-link" href="cartes.html">DATA</a>
         <a class="nav-link" href="media.html">BIBLIOTHEQUE</a>
         <a class="nav-link" href="annexe.html">MEDIA</a>
-        
-    </nav>
-
-    <div class="header text-center my-4">
-        <h1>Mutation urbaine à Bouaflé</h1>
-    </div>
-
-    <div class="bloc">
-        <h2 style="text-align: center;">RESUME</h2>
-        <p style="text-decoration: black; background-color: rgba(255, 255, 0, 0.596)">L’urbanisation en Afrique demeure une problématique importante et est au cœur du développement. Les villes ne cessent de s’étendre dans toutes les directions, ce qui nécessite une planification urbaine adaptée. En côte d’ivoire, bien qu’il existe un plan directeur d’urbanisme aux grandes villes qui sont pour la plupart chef-lieu de région, l’on fait face à une inégale utilisation ou occupation spatiale de la ville, le cas de la ville de Bouaflé. 
-            Cette contribution a pour objet de montrer l’ampleur des mutations opérées dans la ville et de montrer les effets de cette croissance spatiale. Cette analyse repose sur des recherches documentaires, un traitement de d’images satellites depuis les années 1980, et des enquêtes terrains effectuées sur 417 chefs de ménages repartis dans les différents quartiers de la ville. L’analyse des données montre une dynamique spatiale importante de la ville notamment les espaces bâtis au profit des espaces agricoles et des zones de friches. L’évolution rapide de la population influence le mode d’occupation et l’utilisation spatiale de la ville. En effet la croissance rapide de la population apporte de véritable changement à la ville. Celle-ci a participé à une nouvelle configuration de la ville avec de nouvelles habitations, constructions, activités et de nouvelles infrastructures et équipements. Toutefois la croissance démographique engendre des conséquences négatives sur l’espace urbain, notamment le manque d’infrastructures et d’équipements, l’insalubrité, des conflits fonciers et une nouvelle configuration de la ville avec l’extension de nouveaux quartiers non viabilisés. 
-            </p>
-        <p style="font-size: 16px;"> <strong> <u>Mots-clés</u>  : </strong> <strong> <em>Bouaflé, mutation urbaine, croissance démographique, développements socio-économiques, gestion urbaine</em> </strong> </p>
-    </div>
-
-    <footer class="footer">
-        <p>&copy; 2025 Projet de recherche urbaine | Tous droits réservés.</p>
-    </footer>
+         </nav>
 </div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>🗺️ Qu'est-ce que le Géoportail ?</h2>
+      <p>
+        Le Géoportail de Bouaflé est un outil numérique qui permet d'accéder à des cartes interactives et des données géospatiales sur la ville.
+        Il facilite la consultation, la visualisation et l’analyse des informations liées à l’urbanisme, aux équipements publics, aux limites administratives, aux parcelles, et bien plus encore.
+      </p>
+    </section>
+
+    <section>
+      <h2>⚙️ Fonctionnalités principales</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Cartes interactives</h3>
+          <p>Navigation sur différents fonds de cartes : satellite, topographique, administratif, etc.</p>
+        </div>
+        <div class="feature">
+          <h3>Recherche d’adresse ou de parcelle</h3>
+          <p>Identification rapide d'un lieu à partir de son nom ou de ses coordonnées.</p>
+        </div>
+        <div class="feature">
+          <h3>Mesure & impression</h3>
+          <p>Mesure de distances/surfaces et impression personnalisée de cartes.</p>
+        </div>
+        <div class="feature">
+          <h3>Base de données géographiques</h3>
+          <p>Accès aux données cadastrales, infrastructures, réseau routier, etc.</p>
+        </div>
+        <div class="feature">
+          <h3>Partage & intégration</h3>
+          <p>Partage de vues cartographiques via lien ou intégration sur d’autres plateformes.</p>
+        </div>
+        <div class="feature">
+          <h3>Open Data</h3>
+          <p>Téléchargement de jeux de données géospatiales au format GeoJSON, Shapefile, CSV…</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>👥 Publics concernés</h2>
+      <p>
+        Ce géoportail s’adresse aux citoyens, aux chercheurs, aux urbanistes, aux étudiants, aux investisseurs, et aux institutions locales. Il sert à améliorer la transparence, la prise de décision, et la planification durable.
+      </p>
+    </section>
+
+    <div class="launch">
+      <a href="#">🌐 Lancer le Géoportail</a>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2025 - Géoportail de Bouaflé | Développé par la Mairie & la Direction des Systèmes d’Information
+  </footer>
+
 </body>
 </html>
