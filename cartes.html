@@ -2,84 +2,123 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>DATA</title>
+  <title>Catalogue de données - Bouaflé</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #ffffff;
+      color: #1e293b;
     }
 
     header {
-      background-color: white;
-      padding: 20px;
+      background-color: #ffffff;
+      padding: 50px 20px;
       text-align: center;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #e5e7eb;
     }
 
     header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 36px;
+      color: #2563eb;
     }
 
     header p {
       font-size: 16px;
-      margin-top: 10px;
       max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 15px auto 0;
+      line-height: 1.6;
     }
 
-    section {
-      padding: 20px;
-    }
-
-    h2 {
-      font-size: 22px;
-      border-bottom: 2px solid #2196F3;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    .cartes {
-      display: flex;
-      overflow-x: auto;
-      gap: 15px;
-    }
-
-    .carte-item {
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding: 10px;
-      width: 100px;
-      flex: 0 0 auto;
+    .section-donnees {
+      padding: 60px 20px;
       text-align: center;
     }
 
-    .carte-item img {
-      width: 80px;
-      height: 60px;
-      background-color: #ddd;
+    .section-donnees h2 {
+      font-size: 30px;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .section-donnees p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .donnees-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .donnee-box {
+      background: #f2f5f8;
+      border-radius: 8px;
+      width: 260px;
+      text-align: left;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    }
+
+    .donnee-header {
+      background-color: #dbe6ef;
+      padding: 10px 15px;
+      font-weight: bold;
+      color: #003366;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .donnee-box img {
+      width: 100%;
+      height: 130px;
       object-fit: cover;
     }
 
-    .carte-item p {
-      font-size: 12px;
-      margin-top: 5px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+    .donnee-box .titre {
+      padding: 10px 15px 5px;
+      font-size: 14px;
+      color: #0056a0;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
     }
 
-    .cartes::-webkit-scrollbar {
-      height: 8px;
+    .donnee-box .description {
+      padding: 0 15px 15px;
+      font-size: 13px;
+      color: #444;
+      line-height: 1.4;
     }
 
-    .cartes::-webkit-scrollbar-thumb {
-      background-color: #bbb;
-      border-radius: 10px;
+    .btn-toutes-donnees {
+      display: inline-block;
+      margin-top: 40px;
+      background-color: #0056a0;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn-toutes-donnees:hover {
+      background-color: #003f75;
+    }
+
+    @media (max-width: 768px) {
+      .donnees-grid {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -88,23 +127,61 @@
   <header>
     <h1>Visualisation des données</h1>
     <p>
-     Amaude est une plate-forme Web-GIS pour publier et partager les cartes sur la ville de BOUAFLE.
+      <strong>AMAUDE</strong> est une plate-forme Web-GIS pour publier et partager des cartes thématiques sur la ville de <strong>Bouaflé</strong>. 
     </p>
   </header>
 
-  <section>
-    <h2>Catalogue de données</h2>
-    <div class="cartes">
-      <div class="carte-item">
-         <a href=https://umap.openstreetmap.fr/fr/map/carte-danalyse-de-logements-et-de-territoire_1158455#9/47.4550/-0.4340><p>EDCATION</p></a>
+  <section class="section-donnees">
+    <h2>Données à la Une</h2>
+    <p>Explorez les données disponibles sur Bouaflé, en lien avec le territoire, les services et l’aménagement.</p>
+
+    <div class="donnees-grid">
+
+      <div class="donnee-box">
+        <div class="donnee-header">📌 Population</div>
+        <img src="https://via.placeholder.com/260x130?text=Population" alt="Carte population">
+        <a href="#" class="titre">Répartition démographique</a>
+        <p class="description">Données de recensement et de densité de la population par quartier ou zone.</p>
       </div>
-      <div class="carte-item">
-        <p>  <a href=https://umap.openstreetmap.fr/fr/map/carte-danalyse-de-logements-et-de-territoire_1158455#9/47.4550/-0.4340><p>SANTE</p></a></p>
+
+      <div class="donnee-box">
+        <div class="donnee-header">🏛️ Administration</div>
+        <img src="https://via.placeholder.com/260x130?text=Administration" alt="Carte administration">
+        <a href="#" class="titre">Équipements publics</a>
+        <p class="description">Localisation des bureaux administratifs, écoles, mairies, commissariats…</p>
       </div>
-      <div class="carte-item">
-         <a href=https://umap.openstreetmap.fr/fr/map/carte-danalyse-de-logements-et-de-territoire_1158455#9/47.4550/-0.4340><p>ADMINITRATION</p></a>
+
+      <div class="donnee-box">
+        <div class="donnee-header">❤️ Santé</div>
+        <img src="https://via.placeholder.com/260x130?text=Sante" alt="Carte santé">
+        <a href="https://umap.openstreetmap.fr/fr/map/carte-danalyse-de-logements-et-de-territoire_1158455#9/47.4550/-0.4340" class="titre" target="_blank">Structures de soins</a>
+        <p class="description">Dispensaires, hôpitaux, pharmacies et centres de santé référencés par quartier.</p>
       </div>
+
+      <div class="donnee-box">
+        <div class="donnee-header">🎓 Éducation</div>
+        <img src="https://via.placeholder.com/260x130?text=Education" alt="Carte éducation">
+        <a href="#" class="titre">Écoles et formations</a>
+        <p class="description">Répartition des écoles primaires, secondaires, centres de formation, etc.</p>
+      </div>
+
+      <div class="donnee-box">
+        <div class="donnee-header">🛣️ Routes</div>
+        <img src="https://via.placeholder.com/260x130?text=Routes" alt="Carte des routes">
+        <a href="#" class="titre">Réseau routier</a>
+        <p class="description">Carte du réseau routier urbain et interurbain, types de voies, accès, etc.</p>
+      </div>
+
+      <div class="donnee-box">
+        <div class="donnee-header">📐 Cadastre</div>
+        <img src="https://via.placeholder.com/260x130?text=Cadastre" alt="Carte cadastrale">
+        <a href="#" class="titre">Parcelles et zonage</a>
+        <p class="description">Accès aux limites cadastrales, types de parcelles, propriétés, zones d’usage.</p>
+      </div>
+
     </div>
+
+    
   </section>
 
 </body>
