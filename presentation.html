@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ville de Bouaflé - Présentation</title>
+  <style>
+    :root {
+      --primary-color: #005f73;
+      --secondary-color: #0a9396;
+      --bg-color: #f1f5f9;
+      --text-color: #1f2937;
+      --section-bg: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      gap: 40px;
+    }
+
+    section {
+      background: var(--section-bg);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 22px;
+      margin-bottom: 15px;
+      border-left: 4px solid var(--secondary-color);
+      padding-left: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #555;
+      background-color: #e2e8f0;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ville de Bouaflé</h1>
+    <p>Une cité au carrefour de la tradition, du développement et de la diversité.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>🏛️ Origine</h2>
+      <p>
+        Bouaflé est une ville historiquement fondée par les peuples autochtones de la Marahoué. Elle était un centre d’échange entre différentes communautés avant l’arrivée de l’administration coloniale française. Cette origine lui confère une richesse culturelle profonde.
+      </p>
+    </section>
+
+    <section>
+      <h2>🧭 Découverte de la ville actuelle</h2>
+      <p>
+        Aujourd’hui, Bouaflé est une commune en pleine expansion avec des infrastructures modernes, des routes bitumées, des services publics fonctionnels et un tissu économique en croissance. Elle est également un pôle éducatif régional.
+      </p>
+    </section>
+
+    <section>
+      <h2>🏘️ Les quartiers</h2>
+      <p>
+        La ville est structurée en plusieurs quartiers emblématiques : Commerce (centre-ville animé), Air France (zone résidentielle), Belle-Ville (en développement), et Dioulabougou (zone populaire et commerçante). Chaque quartier reflète une ambiance et une fonction particulière.
+      </p>
+    </section>
+
+    <section>
+      <h2>👥 Population & Activités</h2>
+      <p>
+        Bouaflé abrite une population estimée à plus de 120 000 habitants, composée de jeunes, d’agriculteurs, de fonctionnaires, d’artisans et de commerçants. Ses principales activités sont l’agriculture (cacao, maïs, manioc), le commerce de détail, le transport interurbain, et l'artisanat local.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 - Présentation réalisée par la Direction du Développement Territorial
+  </footer>
+
+</body>
+</html>
